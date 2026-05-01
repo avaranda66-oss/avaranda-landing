@@ -16,6 +16,12 @@ import sharp from "sharp";
 const ROOT = "public/images";
 const MAX_DIMENSION = 1600;
 
+// Hero/portrait images preserved at full quality (visible at large sizes)
+const PRESERVE = new Set([
+  "public/images/story_images/tarcila.png",
+  "public/images/story_images/tarcila9x16.png",
+]);
+
 let beforeTotal = 0;
 let afterTotal = 0;
 let processed = 0;
@@ -36,6 +42,16 @@ async function walk(dir) {
 async function processFile(filePath) {
   const ext = extname(filePath).toLowerCase();
   if (![".png", ".jpg", ".jpeg"].includes(ext)) return;
+
+  const normalized = filePath.replace(/\\/g, "/");
+  if (PRESERVE.has(normalized)) {
+    skipped++;
+    console.log(`  · ${filePath.replace("public/images/", "")}  (preservada — qualidade alta)`);
+    const beforeStat = await stat(filePath);
+    beforeTotal += beforeStat.size;
+    afterTotal += beforeStat.size;
+    return;
+  }
 
   try {
     const beforeStat = await stat(filePath);

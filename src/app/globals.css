@@ -1037,9 +1037,9 @@ main {
     grid-column: 2 / 3;
     grid-row: 1;
     align-self: start;
-    width: clamp(190px, 42vw, 270px);
-    height: clamp(235px, 54vw, 350px);
-    margin-left: -42px;
+    width: clamp(240px, 56vw, 340px);
+    height: clamp(300px, 72vw, 430px);
+    margin-left: -54px;
     margin-bottom: 0;
   }
 
@@ -1321,9 +1321,9 @@ main {
   }
 
   .hero-portrait {
-    width: 178px;
-    height: 242px;
-    margin-left: -50px;
+    width: 220px;
+    height: 290px;
+    margin-left: -56px;
   }
 
   .hero-tarcila-video {
