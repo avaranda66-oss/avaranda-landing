@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+.next/
+out/
+dist/
+coverage/
+tsconfig.tsbuildinfo
+
+# Vercel
+.vercel/
+
+# Logs
+*.log
+dev-server.*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Project-specific (kept locally — not needed for deploy)
+.backup-pre-mockup-pass/
+.playwright-mcp/
+animações/
+fotoscardapio/
+landingpageantiga/
+mockupexample/
+images/
+desktop-after-pass*.png
+mobile-after-mask*.png
+mobile-final.png
