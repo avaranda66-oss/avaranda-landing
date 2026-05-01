@@ -28,13 +28,14 @@ Thumbs.db
 !.env.example
 
 # Project-specific (kept locally — not needed for deploy)
-.backup-pre-mockup-pass/
-.playwright-mcp/
-animações/
-fotoscardapio/
-landingpageantiga/
-mockupexample/
-images/
-desktop-after-pass*.png
-mobile-after-mask*.png
-mobile-final.png
+# Use leading "/" to anchor to repo root (avoids accidentally excluding public/images, etc.)
+/.backup-pre-mockup-pass/
+/.playwright-mcp/
+/animações/
+/fotoscardapio/
+/landingpageantiga/
+/mockupexample/
+/images/
+/desktop-after-pass*.png
+/mobile-after-mask*.png
+/mobile-final.png
