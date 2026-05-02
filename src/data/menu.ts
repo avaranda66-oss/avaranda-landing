@@ -106,7 +106,7 @@ export const menuCategories: MenuCategory[] = [
         id: "salada-caprese",
         title: "Salada Caprese",
         description:
-          "Tomate, mussarela de búfala e manjericão fresco — clássico italiano servido com azeite extra virgem e flor de sal.",
+          "Tomate, mussarela artesanal de Mirian Nogueira e manjericão fresco — clássico italiano servido com azeite extra virgem e flor de sal.",
         price: PRICE_TBD,
         image: "/images/menu/salada_caprese.png",
       },
@@ -125,14 +125,6 @@ export const menuCategories: MenuCategory[] = [
           "Seleção de queijos artesanais, embutidos finos, azeitonas, frutas frescas e pães crocantes — montada em tábua de madeira.",
         price: PRICE_TBD,
         image: "/images/menu/bobo_camarao.png",
-      },
-      {
-        id: "tropical-felix",
-        title: "Tropical Félix",
-        description:
-          "Especialidade da casa: criação autoral com toques tropicais, limão siciliano e ervas frescas. Para abrir a mesa com personalidade.",
-        price: PRICE_TBD,
-        image: "/images/menu/tropical_felix.png",
       },
     ],
   },
@@ -168,10 +160,19 @@ export const menuCategories: MenuCategory[] = [
         image: "/images/menu/file_mignon_fritas.png",
       },
       {
+        id: "tropical-felix",
+        title: "Tropical Félix",
+        description:
+          "Criação autoral da casa: abacaxi recheado com camarão, finalizado com ervas frescas. Acompanha arroz.",
+        price: PRICE_TBD,
+        image: "/images/menu/tropical_felix.png",
+        highlight: true,
+      },
+      {
         id: "pizza",
         title: "Pizza Artesanal",
         description:
-          "Massa fermentada lentamente, molho de tomate San Marzano e mussarela de búfala. Forno a lenha.",
+          "Massa fermentada artesanalmente, molho de tomate caseiro e mussarela artesanal de Mirian Nogueira. Finalizada com manjericão fresco.",
         price: PRICE_TBD,
         image: "/images/menu/pizza.png",
       },
@@ -179,7 +180,7 @@ export const menuCategories: MenuCategory[] = [
         id: "pizza-4-queijos",
         title: "Pizza 4 Queijos",
         description:
-          "Quatro queijos em equilíbrio: mussarela, gorgonzola, parmesão e provolone. Massa artesanal assada em forno a lenha.",
+          "Quatro queijos em equilíbrio: mussarela artesanal de Mirian Nogueira, parmesão, gorgonzola e catupiry. Massa fermentada artesanalmente.",
         price: PRICE_TBD,
         image: "/images/menu/pizza_4_queijos.png",
       },
@@ -187,7 +188,7 @@ export const menuCategories: MenuCategory[] = [
         id: "calzone",
         title: "Calzone",
         description:
-          "Pizza fechada artesanal: queijo derretido, molho de tomate caseiro e recheio à escolha. Assada em forno a lenha.",
+          "Pizza fechada artesanal: queijos derretidos, molho de tomate caseiro e recheio à escolha. Massa fermentada lentamente.",
         price: PRICE_TBD,
         image: "/images/menu/calzone.png",
       },
